@@ -1,3 +1,6 @@
+#wayyyy more efficient with more data
+time = Time.now
+
 def stock_picker(daily_stock_prices)
 	count = 1
 	buy_options = {}
@@ -39,4 +42,6 @@ def stock_picker(daily_stock_prices)
 	puts "Buy on day " + buy_options[best_option][:buy_day].to_s + " and sell on day " + buy_options[best_option][:sell_day].to_s + " for a profit of " + profit.to_s
 end
 
-stock_picker([17,3,6,9,15,8,6,1,1])
+stock_picker([17,3,6,9,15,8,6,1,10])
+
+puts Time.now - time 
